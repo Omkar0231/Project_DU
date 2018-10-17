@@ -60,4 +60,108 @@
         android:textSize="20dp"
         android:gravity="center"
         android:textColor="@color/colorPrimary"/>
+
+
+    <ImageButton
+        android:id="@+id/admission"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+
+        app:layout_constraintBottom_toTopOf="@id/course"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/college"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+         />
+
+    <ImageButton
+        android:id="@+id/college"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toTopOf="@id/marks"
+        app:layout_constraintLeft_toRightOf="@id/admission"
+       app:layout_constraintRight_toLeftOf="@id/news"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        />
+
+    <ImageButton
+        android:id="@+id/course"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@id/exams"
+
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/marks"
+        app:layout_constraintTop_toBottomOf="@id/admission" />
+
+    <ImageButton
+        android:id="@+id/marks"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toTopOf="@id/fees"
+
+        app:layout_constraintLeft_toRightOf="@id/course"
+        app:layout_constraintRight_toLeftOf="@id/predictor"
+        app:layout_constraintTop_toBottomOf="@id/college" />
+
+    <ImageButton
+        android:id="@+id/cutoffs"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/fees"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/predictor" />
+
+    <ImageButton
+        android:id="@+id/exams"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fees"
+        app:layout_constraintTop_toBottomOf="@id/course" />
+
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toTopOf="@id/predictor"
+
+        app:layout_constraintLeft_toRightOf="@id/college"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2" />
+
+    <ImageButton
+        android:id="@+id/predictor"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toTopOf="@id/cutoffs"
+    android:layout_marginRight="20dp"
+        app:layout_constraintLeft_toRightOf="@id/marks"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/news" />
+
+    <ImageButton
+        android:id="@+id/fees"
+        android:layout_width="110dp"
+        android:layout_height="82dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/marks"
+        app:layout_constraintLeft_toRightOf="@id/exams"
+        app:layout_constraintRight_toLeftOf="@id/cutoffs" />
+
+
 </android.support.constraint.ConstraintLayout>
