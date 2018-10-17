@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity  {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeintent = new Intent(MainActivity.this,HansrajActivity2.class);
+                Intent homeintent = new Intent(MainActivity.this,ajayhomepage.class);
                 startActivity(homeintent);
                 finish();
 

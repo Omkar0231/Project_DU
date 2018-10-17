@@ -38,8 +38,11 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
-        <activity android:name=".HansrajPageBlind"></activity>
+        <activity android:name=".HansrajPageBlind" />
+        <activity
+            android:name=".ajayhomepage"
+            android:label="@string/title_activity_ajayhomepage"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
