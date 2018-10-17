@@ -1,10 +1,6 @@
 package com.example.omkar.project_du;
 
-<<<<<<< HEAD
-import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-=======
+
 import android.Manifest;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -22,7 +18,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
->>>>>>> ajay_homepage
+
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -32,11 +28,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-<<<<<<< HEAD
-import android.widget.ImageView;
-import android.widget.ViewFlipper;
-
-=======
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
@@ -44,14 +35,13 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 import java.util.Locale;
 
->>>>>>> ajay_homepage
+
 public class ajayhomepage extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ViewFlipper viewFlipper;
     ImageView imageView;
-<<<<<<< HEAD
-=======
+
     MediaPlayer AudioForBlind;   // Are you a blind person? & yes or no (audio)
     String Speechflag="";
     SpeechRecognizer mSpeechRecognizer;
@@ -59,7 +49,7 @@ public class ajayhomepage extends AppCompatActivity
     ImageButton learnmoreHannsraj, learnmoreRamjas;
 
     ImageButton imageButton;
->>>>>>> ajay_homepage
+
 
     int images[]={R.drawable.hrc,R.drawable.hindu,R.drawable.gargi,R.drawable.miranda,R.drawable.daulat,R.drawable.lsr,R.drawable.ramjas,R.drawable.kmc,R.drawable.arts,R.drawable.stephens,R.drawable.ddu,R.drawable.cvs,R.drawable.desbhandu,R.drawable.andc,R.drawable.art,R.drawable.khalsa,R.drawable.mayeteri};
 
@@ -71,19 +61,16 @@ public class ajayhomepage extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-<<<<<<< HEAD
 
-=======
         checkPermission();
->>>>>>> ajay_homepage
+
         viewFlipper =findViewById(R.id.viewflip);
 
         for(int image:images)
             flipping(image);
 
 
-<<<<<<< HEAD
-=======
+
         /*AlertDialog.Builder builder=new AlertDialog.Builder(this);//prompt
         builder.setMessage("Are you a Blind Person ?")
                 .setCancelable(false)
@@ -102,7 +89,7 @@ public class ajayhomepage extends AppCompatActivity
                 });
         AlertDialog alertDialog=builder.create();
         alertDialog.show();*/
->>>>>>> ajay_homepage
+
 
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -113,8 +100,7 @@ public class ajayhomepage extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-<<<<<<< HEAD
-=======
+
         imageButton=findViewById(R.id.college);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -267,18 +253,17 @@ public class ajayhomepage extends AppCompatActivity
                 finish();
             }
         }
->>>>>>> ajay_homepage
+
     }
 
     public void flipping(int image)
     {
         imageView=new ImageView(this);
         imageView.setBackgroundResource(image);
-<<<<<<< HEAD
-=======
+
        // imageView.setScaleType(ImageView.ScaleType.MATRIX);
         imageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
->>>>>>> ajay_homepage
+
 
         viewFlipper.addView(imageView);
         viewFlipper.setFlipInterval(4000);
