@@ -21,24 +21,6 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         readmoreHannsraj.setOnClickListener(this);
 
 
-        AlertDialog.Builder builder=new AlertDialog.Builder(this);//prompt
-        builder.setMessage("Are you a Blind Person ?")
-                .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                })
-
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-        AlertDialog alertDialog=builder.create();
-        alertDialog.show();
 
     }
 

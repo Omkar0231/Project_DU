@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ajayhomepage"
+    tools:showIn="@layout/app_bar_ajayhomepage">
+
+
+    <ViewFlipper
+        android:id="@+id/viewflip"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vf_layout_height"></ViewFlipper>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/im_width"
+        android:layout_height="@dimen/im_width"
+        app:layout_constraintBottom_toBottomOf="@id/viewflip"
+        app:layout_constraintLeft_toLeftOf="@id/viewflip"
+        app:layout_constraintRight_toLeftOf="@id/text1"
+        app:layout_constraintTop_toTopOf="@id/viewflip"
+        app:layout_constraintVertical_bias="0.763"
+        android:src="@drawable/du"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="@dimen/tv_width"
+        android:layout_height="@dimen/tv_height"
+        app:layout_constraintBottom_toBottomOf="@id/viewflip"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@id/imageView"
+        app:layout_constraintRight_toRightOf="@id/viewflip"
+        app:layout_constraintTop_toTopOf="@id/viewflip"
+        app:layout_constraintVertical_bias="0.805"
+        android:text="All About DU"
+        android:textSize="@dimen/im_width"
+        android:textColor="@color/white"
+      />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text2height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewflip"
+        app:layout_constraintVertical_bias="0.032"
+        android:text="Get everything related to Du here"
+        android:textSize="@dimen/textSize"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <ImageButton
+        android:id="@+id/admission"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+
+        android:src="@drawable/admission"
+        app:layout_constraintBottom_toTopOf="@id/course"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/college"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        />
+
+    <ImageButton
+        android:id="@+id/college"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:src="@drawable/college"
+    android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toTopOf="@id/marks"
+        app:layout_constraintLeft_toRightOf="@id/admission"
+       app:layout_constraintRight_toLeftOf="@id/news"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        />
+
+    <ImageButton
+        android:id="@+id/course"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@id/exams"
+        android:src="@drawable/courses"
+
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/marks"
+        app:layout_constraintTop_toBottomOf="@id/admission"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+    <ImageButton
+        android:id="@+id/marks"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+
+        app:layout_constraintBottom_toTopOf="@id/fees"
+    android:src="@drawable/marks"
+        app:layout_constraintLeft_toRightOf="@id/course"
+        app:layout_constraintRight_toLeftOf="@id/predictor"
+        app:layout_constraintTop_toBottomOf="@id/college"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+    <ImageButton
+        android:id="@+id/cutoffs"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:src="@drawable/cutoff"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/fees"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/predictor"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+    <ImageButton
+        android:id="@+id/exams"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:src="@drawable/exams"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/fees"
+        app:layout_constraintTop_toBottomOf="@id/course"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+    <ImageButton
+        android:id="@+id/news"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:src="@drawable/news"
+
+        app:layout_constraintBottom_toTopOf="@id/predictor"
+
+        app:layout_constraintLeft_toRightOf="@id/college"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+
+    <ImageButton
+        android:id="@+id/predictor"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+    android:src="@drawable/predictor"
+        app:layout_constraintBottom_toTopOf="@id/cutoffs"
+    android:layout_marginRight="@dimen/textSize"
+        android:adjustViewBounds="true"
+        app:layout_constraintLeft_toRightOf="@id/marks"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/news"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+
+    <ImageButton
+        android:id="@+id/fees"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:src="@drawable/fees"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/marks"
+        app:layout_constraintLeft_toRightOf="@id/exams"
+        app:layout_constraintRight_toLeftOf="@id/cutoffs"
+        android:backgroundTintMode="screen"
+        android:background="@android:drawable/dialog_holo_light_frame"/>
+
+</android.support.constraint.ConstraintLayout>
