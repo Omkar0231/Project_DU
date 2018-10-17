@@ -3,5 +3,13 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+<<<<<<< HEAD
     <color name="white">#ffff</color>
+=======
+<<<<<<< Updated upstream
+=======
+    <color name="white">#ffff</color>
+    <color name="trans">#00000000</color>
+>>>>>>> Stashed changes
+>>>>>>> ajay_homepage
 </resources>

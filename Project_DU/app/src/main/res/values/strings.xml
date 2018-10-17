@@ -9,5 +9,12 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
     <string name="title_activity_ajayhomepage">ajayhomepage</string>
+=======
+<<<<<<< Updated upstream
+=======
+    <string name="title_activity_ajayhomepage">Home</string>
+>>>>>>> Stashed changes
+>>>>>>> ajay_homepage
 </resources>
