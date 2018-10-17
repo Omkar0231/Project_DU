@@ -22,9 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".HansrajActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -38,8 +35,11 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-
-        <activity android:name=".HansrajPageBlind"></activity>
+        <activity android:name=".HansrajPageBlind" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -40,86 +40,16 @@ public class HansrajActivity2 extends AppCompatActivity
 
     ImageButton learnmoreHannsraj, learnmoreRamjas;
     ImageView du_colleges;
-    MediaPlayer AudioForBlind;   // Are you a blind person? & yes or no (audio)
-    String Speechflag="";
-
-    SpeechRecognizer mSpeechRecognizer;
-    Intent mRecognizerIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hansraj2);
 
-        checkPermission(); // for checking the permissions
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        mSpeechRecognizer = SpeechRecognizer.createSpeechRecognizer(this);
-
-        mRecognizerIntent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-        mRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-        mRecognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
-
-        mSpeechRecognizer.setRecognitionListener(new RecognitionListener() {
-            @Override
-            public void onReadyForSpeech(Bundle params) {
-
-            }
-
-            @Override
-            public void onBeginningOfSpeech() {
-
-            }
-
-            @Override
-            public void onRmsChanged(float rmsdB) {
-
-            }
-
-            @Override
-            public void onBufferReceived(byte[] buffer) {
-
-            }
-
-            @Override
-            public void onEndOfSpeech() {
-
-            }
-
-            @Override
-            public void onError(int error) {
-
-            }
-
-            @Override
-            public void onResults(Bundle results) {
-
-                ArrayList<String> mSpeechToText = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
-                if(mSpeechToText!=null){
-                    if(mSpeechToText.get(0).equals("yes")){
-                        Speechflag="yes";
-                    }
-
-                   else if(mSpeechToText.get(0).equals("no")){
-                        Speechflag="no";
-                    }
-
-                }
-
-
-            }
-
-            @Override
-            public void onPartialResults(Bundle partialResults) {
-
-            }
-
-            @Override
-            public void onEvent(int eventType, Bundle params) {
-
-            }
-        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -146,86 +76,11 @@ public class HansrajActivity2 extends AppCompatActivity
         learnmoreRamjas = findViewById(R.id.readmoreRamj);
         du_colleges = findViewById(R.id.ducollegesid);
 
-        //Audio For Blind
-        AudioForBlind = MediaPlayer.create(HansrajActivity2.this, R.raw.areyouablindperson);
 
         learnmoreHannsraj.setOnClickListener(this);
 
 
-        final AlertDialog dialog;
-
-        AlertDialog.Builder alert = new AlertDialog.Builder(this);
-
-
-        alert.setMessage("Are you a Blind Person ?")
-                .setCancelable(false)
-
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                    }
-                })
-
-                .setNegativeButton("No", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                });
-        dialog=alert.create();
-        dialog.show();        // Show DialogueBox
-        AudioForBlind.start();     // Play Audio
-
-        //Executing after 3 seconds
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                   mSpeechRecognizer.startListening(mRecognizerIntent);
-
-             }
-        }, 3000);
-
-
-        //Executing after 7 seconds
-        final Handler handler1 = new Handler();
-        handler1.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-
-                // If not Blind, the dialogBox closes
-                if(Speechflag.equals("no")){
-                    dialog.cancel();
-                }
-
-                // If Blind, Another Activity Starts
-                else if(Speechflag.equals("yes")){
-                   Intent BlindHansrajPage = new Intent(HansrajActivity2.this,HansrajPageBlind.class);
-                   startActivity(BlindHansrajPage);
-                }
-
-
-            }
-        }, 7000);
-
-
-
     }
-
-
-        // Permission Check for Record Audio
-        private void checkPermission() {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                if (!(ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)) {
-                    Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                            Uri.parse("package:" + getPackageName()));
-                    startActivity(intent);
-                    finish();
-                }
-            }
-        }
 
 
             @Override
