@@ -22,9 +22,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HomeActivity"
-            android:screenOrientation="portrait" />
-        <activity
             android:name=".HansrajActivity"
             android:screenOrientation="portrait" />
         <activity
@@ -40,9 +37,9 @@
 
         <activity android:name=".HansrajPageBlind" />
         <activity
-            android:name=".ajayhomepage"
-            android:label="@string/title_activity_ajayhomepage"
-            android:theme="@style/AppTheme"></activity>
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity  {
 
     Animation fromtop,frombottom;
     ImageView logo;
-    private static int Splash_Time=4000;
+    private static int Splash_Time=2500;
 
 
     @Override
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity  {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeintent = new Intent(MainActivity.this,ajayhomepage.class);
+                Intent homeintent = new Intent(MainActivity.this,HomeActivity.class);
                 startActivity(homeintent);
                 finish();
 
