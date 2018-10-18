@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity  {
 
     Animation fromtop,frombottom;
     ImageView logo;
-    private static int Splash_Time=2500;
+    private static int Splash_Time=2000;
 
 
     @Override

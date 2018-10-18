@@ -36,12 +36,12 @@ import java.util.Locale;
 
 // This is the first activity
 public class HansrajActivity2 extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener , View.OnClickListener {
+      implements View.OnClickListener {
 
     ImageButton learnmoreHannsraj, learnmoreRamjas;
     ImageView du_colleges;
     MediaPlayer AudioForBlind;   // Are you a blind person? & yes or no (audio)
-    String Speechflag="";
+    String Speechflag = "";
 
     SpeechRecognizer mSpeechRecognizer;
     Intent mRecognizerIntent;
@@ -51,7 +51,7 @@ public class HansrajActivity2 extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hansraj2);
 
-        checkPermission(); // for checking the permissions
+    /*    checkPermission(); // for checking the permissions
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -121,14 +121,6 @@ public class HansrajActivity2 extends AppCompatActivity
             }
         });
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -139,7 +131,7 @@ public class HansrajActivity2 extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
+*/
         //Dialogue Box
         //Assigning
         learnmoreHannsraj = findViewById(R.id.readmoreH);
@@ -152,7 +144,7 @@ public class HansrajActivity2 extends AppCompatActivity
         learnmoreHannsraj.setOnClickListener(this);
 
 
-        final AlertDialog dialog;
+      /*  final AlertDialog dialog;
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
 
@@ -210,13 +202,13 @@ public class HansrajActivity2 extends AppCompatActivity
             }
         }, 7000);
 
-
+*/
 
     }
 
 
-        // Permission Check for Record Audio
-        private void checkPermission() {
+    // Permission Check for Record Audio
+       /* private void checkPermission() {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 if (!(ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED)) {
                     Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
@@ -225,19 +217,20 @@ public class HansrajActivity2 extends AppCompatActivity
                     finish();
                 }
             }
+       */
+
+
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId() == R.id.readmoreH) {
+            Intent Hansraj = new Intent(HansrajActivity2.this, HansrajActivity.class);
+            startActivity(Hansraj);
         }
+    }
 
 
-            @Override
-        public void onClick (View v){
-            if (v.getId() == R.id.readmoreH) {
-                Intent Hansraj = new Intent(HansrajActivity2.this, HansrajActivity.class);
-                startActivity(Hansraj);
-            }
-        }
-
-
-        @Override
+    /*    @Override
         public void onBackPressed () {
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             if (drawer.isDrawerOpen(GravityCompat.START)) {
@@ -292,6 +285,7 @@ public class HansrajActivity2 extends AppCompatActivity
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
             return true;
-        }
-    }
+        }*/
+//}
 
+}

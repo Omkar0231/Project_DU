@@ -29,7 +29,6 @@
             android:label="@string/title_activity_hansraj2"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-        <activity android:name=".Main2Activity" />
 
         <meta-data
             android:name="preloaded_fonts"

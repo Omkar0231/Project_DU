@@ -49,23 +49,26 @@ public class HomeActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
 
         // checking the permissions for audio record
         checkPermission();
 
+
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+                HomeActivity.this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
 
         toggle.syncState();
 
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
+        navigationView.setNavigationItemSelectedListener(HomeActivity.this);
 
         //Initializing
         DucollegeIcon = findViewById(R.id.ducollegeicon);
@@ -74,7 +77,7 @@ public class HomeActivity extends AppCompatActivity
 
 
         //Creating an array for sliding multiple images
-        int SlidingImages[] = {R.drawable.pic1, R.drawable.pic2, R.drawable.pic3, R.drawable.pic4, R.drawable.pic5, R.drawable.pic6, R.drawable.pic7, R.drawable.pic8 };
+        int SlidingImages[] = {R.drawable.hrc, R.drawable.hindu,R.drawable.ramjas,R.drawable.stephens,R.drawable.ipcollege,R.drawable.kmc, R.drawable.miranda,R.drawable.mayeteri,R.drawable.lsr, R.drawable.art, R.drawable.cvs, R.drawable.daulat, R.drawable.ddu, R.drawable.desbhandu,R.drawable.gargi };
 
         // Displaying the Sliding Images
         for(int image : SlidingImages){
