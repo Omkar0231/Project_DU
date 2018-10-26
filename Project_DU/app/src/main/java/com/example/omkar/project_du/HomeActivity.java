@@ -261,8 +261,12 @@ public class HomeActivity extends AppCompatActivity
     public void ImageSliding(int image){
         ImageView imageView = new ImageButton(this);
         imageView.setBackgroundResource(image);
-        imageView.setMaxWidth(R.dimen._302sdp);
         imageView.setMaxHeight(R.dimen._177sdp);
+        imageView.setMaxWidth(R.dimen._302sdp);
+
+
+
+        viewFlipper.addView(imageView);
         viewFlipper.setFlipInterval(3000);
         viewFlipper.setAutoStart(true);
         viewFlipper.setInAnimation(this, android.R.anim.fade_in);
