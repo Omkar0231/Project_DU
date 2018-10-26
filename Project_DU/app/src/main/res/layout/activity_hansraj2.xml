@@ -32,6 +32,7 @@
                android:layout_alignParentRight="true"
                android:layout_marginStart="0dp"
                android:layout_marginLeft="0dp"
+               android:layout_marginTop="0dp"
                android:layout_marginEnd="0dp"
                android:layout_marginRight="0dp"
                android:background="@drawable/a123" />
@@ -39,35 +40,35 @@
 
            <ImageButton
                android:id="@+id/readmoreH"
-               android:layout_width="65dp"
-               android:layout_height="20dp"
+               android:layout_width="60dp"
+               android:layout_height="16dp"
                android:layout_alignStart="@+id/ducollegesid"
                android:layout_alignLeft="@+id/ducollegesid"
                android:layout_alignTop="@+id/ducollegesid"
                android:layout_alignEnd="@+id/ducollegesid"
                android:layout_alignRight="@+id/ducollegesid"
-               android:layout_marginStart="284dp"
-               android:layout_marginLeft="284dp"
-               android:layout_marginTop="324dp"
-               android:layout_marginEnd="61dp"
-               android:layout_marginRight="61dp"
+               android:layout_marginStart="228dp"
+               android:layout_marginLeft="228dp"
+               android:layout_marginTop="327dp"
+               android:layout_marginEnd="33dp"
+               android:layout_marginRight="33dp"
                android:background="@drawable/learnmone" />
 
            <ImageButton
                android:id="@+id/readmoreRamj"
-               android:layout_width="65dp"
-               android:layout_height="20dp"
+               android:layout_width="68dp"
+               android:layout_height="18dp"
                android:layout_below="@+id/readmoreH"
                android:layout_alignEnd="@+id/ducollegesid"
                android:layout_alignRight="@+id/ducollegesid"
 
                android:layout_alignParentStart="true"
                android:layout_alignParentLeft="true"
-               android:layout_marginStart="284dp"
-               android:layout_marginLeft="284dp"
-               android:layout_marginTop="294dp"
-               android:layout_marginEnd="60dp"
-               android:layout_marginRight="60dp"
+               android:layout_marginStart="221dp"
+               android:layout_marginLeft="221dp"
+               android:layout_marginTop="303dp"
+               android:layout_marginEnd="31dp"
+               android:layout_marginRight="31dp"
                android:background="@drawable/learnmone" />
 
        </RelativeLayout>

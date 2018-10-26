@@ -31,7 +31,7 @@ public class HansrajActivity extends AppCompatActivity implements View.OnClickLi
         hansraj_flipper = findViewById(R.id.hansajslide);
         hansrajlocation.setOnClickListener(this);
 
-        int image[] = {R.drawable.path, R.drawable.hansrajslide2,R.drawable.hansrajslide3,R.drawable.hansrajslide4};
+        int image[] = {R.drawable.hrc, R.drawable.hansrajslide2,R.drawable.hansrajslide3,R.drawable.hansrajslide4};
 
         for(int imageloop: image){
             flipperImage(imageloop);
