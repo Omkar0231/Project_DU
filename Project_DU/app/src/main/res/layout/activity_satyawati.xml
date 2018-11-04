@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SatyawatiActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/satyawatislide"></ViewFlipper>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+
+        <TextView
+            android:id="@+id/clicktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click "
+            android:layout_marginTop="900dp"
+            android:layout_marginStart="30dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp" />
+
+        <TextView
+            android:id="@+id/locatesatyawatitext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="to locate Satyawati College "
+            android:layout_marginTop="900dp"
+            android:layout_marginStart="110dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="110dp" />
+        <ImageButton
+            android:id="@+id/satyawatilocation"
+            android:layout_width="25dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="900dp"
+            android:layout_marginStart="80dp"
+
+            android:background="@drawable/location"
+            android:layout_marginLeft="80dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

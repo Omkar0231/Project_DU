@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cutoff_list"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/cutoff_radiobuttons">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/best_cutoff"
+            android:id="@+id/firstcutoffbtn"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/least_cutoff"
+            android:id="@+id/lastcutoffbtn"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp" />
+
+    </RadioGroup>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view">
+
+
+    </ListView>
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf2017"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+
+
+
+
+
+
+</RelativeLayout>
