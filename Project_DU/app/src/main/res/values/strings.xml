@@ -10,6 +10,17 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="action_login">Admin</string>
-    <string name="title_activity_home">Home</string>
+
+
+    <string name="best_cutoff">First CutOff</string>
+    <string name="least_cutoff">Last CutOff</string>
+
+    <string-array name="Science_Commerce">
+        <item>-----Select Course-----</item>
+        <item>Science</item>
+        <item>Arts &amp; Commerce</item>
+    </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home_main">HomeActivityMain</string>
 
 </resources>

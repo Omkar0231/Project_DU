@@ -24,21 +24,19 @@
         <activity
             android:name=".HansrajActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".HansrajActivity2"
-            android:label="@string/title_activity_hansraj2"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
         <activity android:name=".HansrajPageBlind" />
+        <activity android:name=".DU_Prospectus" />
+        <activity android:name=".Cutoff_list" />
+        <activity android:name=".Ug_Admissions" />
         <activity
-            android:name=".HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".HomeActivityMain"
+            android:label="@string/title_activity_home_main"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

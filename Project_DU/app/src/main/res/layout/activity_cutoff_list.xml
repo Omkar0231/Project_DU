@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cutoff_list">
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf2017"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+    </com.github.barteksc.pdfviewer.PDFView>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/cutoff_radiobuttons">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/best_cutoff"
+            android:id="@+id/firstcutoffbtn"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/least_cutoff"
+            android:id="@+id/lastcutoffbtn"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp" />
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/selectstream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/Science_Commerce"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true">
+
+    </Spinner>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view">
+
+
+    </ListView>
+
+
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

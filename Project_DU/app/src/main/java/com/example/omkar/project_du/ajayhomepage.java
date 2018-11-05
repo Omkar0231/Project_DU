@@ -105,8 +105,8 @@ public class ajayhomepage extends AppCompatActivity
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intenttoCollege=new Intent(getApplicationContext(),HomeActivity.class);
-                startActivity(intenttoCollege);
+          //      Intent intenttoCollege=new Intent(getApplicationContext(),HomeActivity.class);
+            //    startActivity(intenttoCollege);
             }
         });
 

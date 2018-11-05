@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ug_Admissions">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Admissionthrough"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admission through"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:fontFamily="@font/aladin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"/>
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radiogroupUG"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:id="@+id/meritbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="80dp"
+                android:text="Merit \nBased" />
+
+            <RadioButton
+                android:id="@+id/Entrancebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Entrance \nBased"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp" />
+
+            <RadioButton
+                android:id="@+id/registrationbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online \nRegistration"
+                android:layout_marginTop="80dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp" />
+
+
+
+        </RadioGroup>
+
+        <com.github.barteksc.pdfviewer.PDFView
+            android:id="@+id/ug_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="140dp">
+
+
+
+        </com.github.barteksc.pdfviewer.PDFView>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

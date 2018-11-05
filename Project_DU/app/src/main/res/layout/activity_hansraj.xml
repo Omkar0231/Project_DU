@@ -15,15 +15,11 @@
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:layout_centerHorizontal="true"
-            android:id="@+id/hansajslide"></ViewFlipper>
+            android:id="@+id/hansajslide">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/notes"
-            android:layout_marginTop="290dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginLeft="20dp" />
+        </ViewFlipper>
+
+
 
 
         <TextView
