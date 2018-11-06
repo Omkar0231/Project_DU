@@ -36,7 +36,8 @@
         <activity
             android:name=".HomeActivityMain"
             android:label="@string/title_activity_home_main"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DUCollegesAcitivity"></activity>
     </application>
 
 </manifest>
