@@ -331,7 +331,7 @@ public class HomeActivity extends AppCompatActivity
     public void onClick(View v) {
         int id = v.getId();
         if(id==R.id.ducollegestext||id==R.id.ducollegeicon){
-            Intent DucollegesPage = new Intent(HomeActivity.this,HansrajActivity2.class);
+            Intent DucollegesPage = new Intent(HomeActivity.this,ListColleges.class);
             startActivity(DucollegesPage);
         }
     }

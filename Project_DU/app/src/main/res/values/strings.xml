@@ -11,5 +11,24 @@
     <string name="action_settings">Settings</string>
     <string name="action_login">Admin</string>
     <string name="title_activity_home">Home</string>
+    <string name="colleges_of_du">Colleges of DU</string>
+    <string name="todo">TODO</string>
+    <string name="hrcText">One of the largest constituent Colleges of the University of Delhi\nEstablished 1948\nNAAC Grade A+ with CGPA 3.62 \nTop Course :B.Sc(Hons)</string>
+    <string name="read_more">read more..</string>
+    <string name="hansraj_college">\tHansraj College</string>
+    <string name="web">\t<a href="https://www.hansrajcollege.ac.in">www.hansrajcollege.ac.in</a></string>
+    <string name="_11_27667747">\t011 2766 7747</string>
+    <string name="mahatma_hansraj_marg_new_delhi_delhi_n_t110007">\tHansraj College, C-1 Block, Malka Ganj, Delhi, 110007</string>
+    <string name="facilities">Facilities:</string>
+    <string name="cafeteria">Cafeteria</string>
+    <string name="hostel">Hostel</string>
+    <string name="labs">Labs</string>
+    <string name="gym">Gym</string>
+    <string name="wi_fi">Wi-fi</string>
+    <string name="medical">Medical</string>
+    <string name="sports">Sports</string>
+    <string name="library">Library</string>
+    <string name="auditorium">Auditorium</string>
+    <string name="hansraj_colleg">Hansraj College</string>
 
 </resources>
